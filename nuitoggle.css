@@ -1,0 +1,44 @@
+/* Core */
+.InPageNavigation {
+  position: fixed;
+  z-index: 10000;
+}
+
+.btn-InPageNavigation--toggle {
+  position: absolute;
+}
+
+/* Skin */
+.InPageNavigation {
+  top: 10px;
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #bfbfbf;
+  background: #fff;
+}
+
+.InPageNavigation[aria-expanded="true"] {
+  right: 10px;
+}
+.InPageNavigation[aria-expanded="false"] {
+  right: -250px;
+}
+
+.btn-InPageNavigation--toggle,
+.btn-InPageNavigation--toggle:hover {
+  top: -1px;
+  left: -40px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border: 1px solid #bfbfbf;
+  border-right: none;
+  background: pink;
+  font-size: 1.2em;
+}
+
+.InPageNavigation[aria-expanded="true"] .btn-InPageNavigation--toggle .fa-chevron-left,
+.InPageNavigation[aria-expanded="false"] .btn-InPageNavigation--toggle .fa-chevron-right {
+  display: none;
+}
+/* fin: Off-Canvas in-page navigation component */
