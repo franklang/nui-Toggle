@@ -19,8 +19,8 @@
     const $_THIS = this,
           $_SELECTOR = $_THIS.selector,
           LOCAL_STORAGE_KEY = $_SELECTOR.substring( 1, $_SELECTOR.length ),
-    			// Get current value of dynamic local storage key
-    			LOCAL_STORAGE_VALUE = localStorage.getItem( LOCAL_STORAGE_KEY );
+          // Get current value of dynamic local storage key
+          LOCAL_STORAGE_VALUE = localStorage.getItem( LOCAL_STORAGE_KEY );
 
 
     // Local Storage
