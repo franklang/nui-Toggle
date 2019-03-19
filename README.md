@@ -10,10 +10,20 @@ JS init:
 $('#targetElement').nuiToggle('#triggerElement');
 ```
 
-HTML essentials:
+Core HTML essentials:
 ```
 <div id="targetElement" aria-expanded="true">
-  <button id="triggerElement"></button>
+  <button id="triggerElement" role="button"></button>
+  <!-- your content here -->
+</div>
+```
+
+With default skin (CSS):
+```
+<div id="inPageNavigation" class="InPageNavigation" aria-expanded="true">
+  <button id="toggleInPageNavigation" class="btn-InPageNavigation--toggle" role="button">
+    <i class="fas fa-chevron-right" title="Masquer l'accès rapide"></i><i class="fas fa-chevron-left" title="Afficher l'accès rapide"></i>
+  </button>
   <!-- your content here -->
 </div>
 ```
