@@ -33,7 +33,7 @@
 
     // Else...
     } else {
-        // console.log('There_s NO local storage KEY called: ' + LOCAL_STORAGE_KEY + ', so we create one with given default VALUE: ' + LOCAL_STORAGE_DYNAMIC_VALUE);
+        // console.log('There_s NO local storage KEY called: ' + LOCAL_STORAGE_KEY + ' yet, so we create one with default VALUE gathered from HTML source: ' + LOCAL_STORAGE_DEFAULT_VALUE);
       // ...dynamically set a default KEY/VALUE pair regarding generated LOCAL_STORAGE_KEY and LOCAL_STORAGE_DEFAULT_VALUE from HTML.
       localStorage.setItem( LOCAL_STORAGE_KEY, LOCAL_STORAGE_DEFAULT_VALUE );
 
